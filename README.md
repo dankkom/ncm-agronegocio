@@ -6,6 +6,8 @@ Delimiter: ","
 
 Encoding: UTF-8
 
+Quoting: QUOTE_ALL
+
 ```r
 write.csv(d, "ncm-agronegocio.csv", row.names = FALSE, quote = TRUE, fileEncoding = "ISO-8859-1")
 ```
