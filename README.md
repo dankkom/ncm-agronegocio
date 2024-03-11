@@ -26,6 +26,6 @@ write.csv2(d, "ncm-agronegocio_br.csv", row.names = FALSE, quote = TRUE, fileEnc
 
 ---
 
-Atualizado em: 2023-11-30
+Atualizado em: 2024-03-11
 
 Fonte: [AGROSTAT](https://indicadores.agricultura.gov.br/agrostat/index.htm)
