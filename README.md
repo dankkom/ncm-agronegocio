@@ -28,4 +28,4 @@ write.csv2(d, "ncm-agronegocio_br.csv", row.names = FALSE, quote = TRUE, fileEnc
 
 Atualizado em: 2024-03-11
 
-Fonte: [AGROSTAT](https://indicadores.agricultura.gov.br/agrostat/index.htm)
+Fonte: [AGROSTAT](https://mapa-indicadores.agricultura.gov.br/publico/extensions/Agrostat/Agrostat.html)
