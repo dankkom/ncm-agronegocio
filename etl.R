@@ -3,14 +3,14 @@ library(dplyr)
 library(tidyr)
 
 
-filepath <- "tabela-de-agrupamentos.xls"
+filepath <- "tabela-de-agrupamentos.xlsx"
 
-df <- readxl::read_xls(filepath, col_types = "text")
+df <- readxl::read_xlsx(filepath, col_types = "text")
 
 df2 <- df %>%
     dplyr::filter(NCM != "Subtotal", !is.na(NCM), Agrupamento == "Agronegócio") %>%
     tidyr::separate("NCM", c("CO_NCM", "NCM"), " - ", extra = "merge", convert = FALSE) %>%
-    dplyr::rename(Setor = Setores, Subsetor = Subsetores, Produto = Produtos) %>%
+    dplyr::rename(Setor = `Setor(es)`, Subsetor = Subsetores, Produto = Produtos) %>%
     dplyr::select(CO_NCM, Setor, Subsetor, Produto, NCM) %>%
     dplyr::arrange(CO_NCM)
 
